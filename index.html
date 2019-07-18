@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>make it meme</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!--Heading-->
+    <section class="header text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">make it meme</h1>
+        </div>
+    </section>
+    
+    <!--Submission-->
+    <section class="submission">
+    <form onsubmit="event.preventDefault()" id="meme-submit">    
+        <!-- First Container URL -->
+        <div class="container-fluid choose">
+            <label for="img-url"><h3 id="picture">Choose an Image: </h3></label>
+            <input type="text" id="img-url" placeholder="Paste image URL here.">
+        </div><br>
+
+        <!-- Second Container TOP -->
+        <div class="container-fluid top">
+            <label for="top-text"><h3>Top Line: </h3></label>
+            <input type="text" id="top-text" placeholder="[Optional] What text would you like to add to the top of your meme?"></input>
+        </div><br>
+
+        <!-- Third Container BOTTOM -->
+        <div class="container-fluid bottom">
+            <label for="bottom-text"><h3>Bottom Line: </h3></label>
+            <input type="text" id="bottom-text" placeholder="[Optional] What text would you like to add to the bottom of your meme?"></input>
+        </div><br>
+
+        <!--Button -->
+        <div class="button">
+            <button id="button" onclick="makeMeme()">Meme It Up!</button> 
+        </div>
+    </form>
+    </section>
+
+    <!--Meme Image Section-->
+    <div id="memes-section" class="memes-section">
+
+    </div><br>
+    <hr>
+
+    <!--Footer-->
+    <footer class="footer">
+        <p>Created by <a href="https://jenniferhm.github.io/">Jennifer Ma</a>. &copy; 2019</p>
+    </footer>
+
+    <script src="./script.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+body {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #369afd;
+    padding: 0px 8px 0px 8px;
+    background-color: rgb(252, 252, 192);
+}
+
+h1 {
+    font-family: Impact;
+}
+
+h3 {
+    font-family: Impact;
+    color: #1a4977;
+    font-weight: 300;
+}
+
+.header {
+    text-align: center;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin 5px 10px;
+    border-radius: 5px;
+    outline: none;
+}
+
+#button {
+    margin-left: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+
+#button:hover {
+    background-color: #369afd;
+}
+
+.remove-button {
+    display: block;
+    margin-right: 8px;
+    position: absolute;
+    z-index: 100;
+}
+
+.remove-button:hover {
+    color: red !important;
+}
+
+.footer {
+    font: 10px;
+    text-align: center;
+}
+
+.meme-block {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin: 10px 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.top-caption {
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    position: absolute;
+    z-index: 100;
+    color: rgb(255, 255, 255);
+    text-shadow: 
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000,
+    -2px -2px 0 #000;
+    top: 0px;
+    width: 100%;
+}
+
+.bottom-caption {
+    font-size: 40px;
+    position: absolute;
+    text-transform: uppercase;
+    z-index: 100;
+    color: rgb(255, 255, 255);
+    text-shadow: 
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000,
+    -2px -2px 0 #000;
+    bottom: 0px;
+    width: 100%;
+}
+
+figcaption {
+    overflow-wrap: break-word;
+}
+
+img {
+    max-width: 500px;
+    height: auto;
+}
+
